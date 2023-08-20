@@ -11,7 +11,7 @@ const ProductItems = ({ products }) => {
   const dispatch = useDispatch();
   return (
     <div className="card">
-      <Link href={"/product"}>
+      <Link href={`/productDisplay/${products.id}`}>
         <Image
           src={products.image}
           //   src={"/images/photo1.jpg"}
@@ -21,7 +21,7 @@ const ProductItems = ({ products }) => {
           className="rounded shadow object-cover h-96 w-full"
         />
       </Link>
-      <Link href={"/product"}>
+      <Link href={`/productDisplay/${products.id}`}>
         <h1>name :{products.name}</h1>
         <h1>price: Rs: {products.price}/-</h1>
       </Link>
